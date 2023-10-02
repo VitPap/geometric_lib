@@ -13,7 +13,7 @@ def area(r):
 ```
 
 2. _Нахождение периметра окружности_
-3. 
+
 Пример: circle.perimeter(4) = 25,13
 ```python
 def perimeter(r):
@@ -79,3 +79,14 @@ def perimeter(a, b, c):
     '''принимает числа a,b,c - длины сторон треугольника, возвращает периметр треугольника'''
     return a + b + c
 ```
+## История изменений библиотеки 
+* ad5851a Create docs.md
+* c984e76 [docs]: adding function description
+* 403114c Editing report(readMe.pdf)
+* f05c90d [add] ReadMe.pdf
+* 4d446c2 fix rectangle calculation
+* 883732b add file for triangle
+* b6c44a1 addding new file
+* c5860c4 addding new file
+* d078c8d L-03: Docs added
+* 8ba9aeb L-03: Circle and square added
