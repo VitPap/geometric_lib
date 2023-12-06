@@ -1,32 +1,27 @@
 import unittest
+from src import square
 
-def area(a, b):
-    return a * b
-
-def perimeter(a, b):
-    return (a + b) * 2
-
-class RectangleTestcase(unittest.TestCase):
+class SquareTestcase(unittest.TestCase):
     def test_zero_mul_area(self):
-        res = area(0, 5)
+        res = square.area(0)
         self.assertEqual(res, 0)
 
     def test_zero_mul_perimeter(self):
-        res = perimeter(0, 0)
+        res = square.perimeter(0)
         self.assertEqual(res, 0)
 
     def test_calculation_area(self):
-        res = area(5, 6)
-        self.assertEqual(res, 30)
+        res = square.area(4)
+        self.assertEqual(res, 16)
 
     def test_calculation_perimeter(self):
-        res = perimeter(5, 6)
-        self.assertEqual(res, 22)
+        res = square.perimeter(4)
+        self.assertEqual(res, 16)
 
     def test_string_input_area(self):
         with self.assertRaises(TypeError):
-            area('5', '5')
+            square.area('5')
 
     def test_string_input_perimeter(self):
         with self.assertRaises(TypeError):
-            perimeter('10', '5')
+            square.perimeter('10')
