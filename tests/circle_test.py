@@ -18,10 +18,10 @@ class CircleTestcase(unittest.TestCase):
         res = round(circle.perimeter(4), 5)
         self.assertEqual(res, 25.13274)
 
-    #def test_string_input_area(self):
-    #    with self.assertRaises(TypeError):
-    #        circle.area('2')
+    def test_string_input_area(self):
+        with self.assertRaises(TypeError):
+            circle.area('2')
 
-    #def test_string_input_perimeter(self):
-    #    with self.assertRaises(TypeError):
-    #        circle.perimeter('4')
+    def test_string_input_perimeter(self):
+        with self.assertRaises(TypeError):
+            circle.perimeter('4')
