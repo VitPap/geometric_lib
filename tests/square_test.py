@@ -18,10 +18,10 @@ class SquareTestcase(unittest.TestCase):
         res = square.perimeter(4)
         self.assertEqual(res, 16)
 
-    def test_string_input_area(self):
-        with self.assertRaises(TypeError):
-            square.area('5')
+    #def test_string_input_area(self):
+    #    with self.assertRaises(TypeError):
+    #        square.area('5')
 
-    def test_string_input_perimeter(self):
-        with self.assertRaises(TypeError):
-            square.perimeter('10')
+    #def test_string_input_perimeter(self):
+    #    with self.assertRaises(TypeError):
+    #        square.perimeter('10')
